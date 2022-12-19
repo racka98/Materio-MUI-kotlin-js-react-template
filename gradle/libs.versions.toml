@@ -1,0 +1,39 @@
+[versions]
+# Important
+kotlin = "1.7.20"
+
+# Kotlin Helpers
+kotlinx_date_time = "0.4.0"
+kotlinx_coroutines = "1.6.4"
+kotlinx_serialization = "1.3.2"
+
+# Kotlin JS React
+kotlin_js_wrappers_bom = "1.0.0-pre.454"
+
+# Linter
+detekt = "1.22.0-RC2"
+
+[libraries]
+# Kotlin
+kotlinx_serialization_core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx_serialization" }
+kotlinx_serialization_json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx_serialization" }
+kotlinx_date_time = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx_date_time" }
+kotlin_junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+
+coroutines_core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx_coroutines" }
+coroutines_test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx_coroutines" }
+
+# Kotlin JS React
+kotlin_js_wrappers_bom = { module = "org.jetbrains.kotlin-wrappers:kotlin-wrappers-bom", version.ref = "kotlin_js_wrappers_bom" }
+kotlin_js_emotion = { module = "org.jetbrains.kotlin-wrappers:kotlin-emotion" }
+kotlin_js_react = { module = "org.jetbrains.kotlin-wrappers:kotlin-react" }
+kotlin_js_react_dom = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-dom" }
+kotlin_js_react_router_dom = { module = "org.jetbrains.kotlin-wrappers:kotlin-react-router-dom" }
+kotlin_js_mui = { module = "org.jetbrains.kotlin-wrappers:kotlin-mui" }
+kotlin_js_mui_icons = { module = "org.jetbrains.kotlin-wrappers:kotlin-mui-icons" }
+
+[plugins]
+# All Plugin should stay here
+kotlin_js = { id = "org.jetbrains.kotlin.js", version.ref = "kotlin" }
+kotlin_seriazation = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+detekt_gradle = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
