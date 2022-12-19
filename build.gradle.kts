@@ -27,6 +27,10 @@ dependencies {
 
     implementation(npm("date-fns", "2.29.3"))
     implementation(npm("@date-io/date-fns", "2.16.0"))
+    implementation(npm("apexcharts-clevision", "3.28.5"))
+    implementation(npm("react-apexcharts", "1.4.0"))
+    implementation(npm("@popperjs/core", "2.11.6"))
+    implementation(npm("nprogress", "0.2.0"))
 }
 
 kotlin {
