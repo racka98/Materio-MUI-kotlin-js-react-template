@@ -9,9 +9,5 @@ import react.dom.client.createRoot
 fun main() {
     val container = document.createElement(div)
         .also { document.body.appendChild(it) }
-
-    val welcome = Welcome.create {
-        name = "Kotlin/JS"
-    }
-    createRoot(container).render(welcome)
+    createRoot(container).render(App.create())
 }

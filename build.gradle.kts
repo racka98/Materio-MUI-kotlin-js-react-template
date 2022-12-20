@@ -31,6 +31,7 @@ dependencies {
     implementation(npm("react-apexcharts", "1.4.0"))
     implementation(npm("@popperjs/core", "2.11.6"))
     implementation(npm("nprogress", "0.2.0"))
+    implementation(npm("mdi-material-ui", "7.6.0"))
 }
 
 kotlin {
